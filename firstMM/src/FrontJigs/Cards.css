@@ -1,0 +1,117 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    grid-gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Style for the dynamically added cards */
+.custom-card {
+  background-color: white;
+  width: 250px;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for a modern feel */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Elevate shadow on hover */
+}
+
+.custom-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.custom-card p {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Style for the add card button */
+.add-card-button {
+  background-color: #f0f0f0;
+  border: 2px dashed #ccc;
+  width: 250px;
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #888;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-card-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.modal input, .modal textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal button:hover {
+  background-color: #45a049;
+}
+
+.modal button:last-child {
+  background-color: #f44336;
+}
+
+.modal button:last-child:hover {
+  background-color: #e53935;
+}
+
+.delete-button {
+  position: relative;
+  bottom: 0px;
+  right: -90px;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
