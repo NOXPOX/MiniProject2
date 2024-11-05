@@ -1,0 +1,12 @@
+/* VisitSideBar.css */
+.SideBar {
+    width: 35%; /* Occupies 35% of the width */
+    height: 100%; /* Full height */
+    background-color: #f0f0f0; /* Light background color */
+    padding: 20px; /* Padding for aesthetics */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for a better look */
+    position: relative; /* Relative position to stack correctly */
+  }
+  
+
+ 
